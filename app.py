@@ -11,7 +11,7 @@ class MockRow:
 @app.route('/')
 def index():
     tasks_html = "<h1>Witaj! Aplikacja wdrożona przez GitHub Actions!</h1><ul>"
-    tasks_html = "<h2>Lista zadan z bazy danych:</h2><ul>"
+    tasks_html = "<h1>Witaj! Aplikacja wdrożona przez GitHub Actions!</h1><ul>"
 
     # Zamiast łączenia się z bazą, tworzymy listę "wierszy" ręcznie
     # na podstawie danych, które podałeś w SQL.
