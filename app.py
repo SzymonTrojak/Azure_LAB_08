@@ -12,7 +12,7 @@ app = Flask(__name__)
 # Upewnij się, że masz ustawioną zmienną środowiskową APPLICATIONINSIGHTS_CONNECTION_STRING
 # lub podaj ją bezpośrednio w connection_string="<twój_klucz>"
 configure_azure_monitor(
-    enable_live_metrics=True  # TO JEST KLUCZOWE DLA LIVE METRICS
+    enable_live_metrics=True,  # TO JEST KLUCZOWE DLA LIVE METRICS
 )
 
 
