@@ -12,14 +12,14 @@ app = Flask(__name__)
 # Upewnij się, że masz ustawioną zmienną środowiskową APPLICATIONINSIGHTS_CONNECTION_STRING
 # lub podaj ją bezpośrednio w connection_string="<twój_klucz>"
 configure_azure_monitor(
-    enable_live_metrics=True,  # TO JEST KLUCZOWE DLA LIVE METRICS
+    enable_live_metrics=True  # TO JEST KLUCZOWE DLA LIVE METRICS
 )
 
 
 @app.route('/')
 def hello():
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    return f"<h1>TEST! Aplikacja wdrożona przez GitHub Actions! Mega sztos zajecia pozdrawiam Szymon Trojak</h1><p>Aktualny czas serwera: {current_time}</p>"
+    return f"<h1>TEST_03! Aplikacja wdrożona przez GitHub Actions! Mega sztos zajecia pozdrawiam Szymon Trojak</h1><p>Aktualny czas serwera: {current_time}</p>"
 
 if __name__ == '__main__':
     app.run()
